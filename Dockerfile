@@ -3,8 +3,7 @@ FROM rootproject/root:6.24.06-centos7
 USER root
 RUN yum install -y epel-release && \
     yum clean all
-RUN yum update -y && \
-    yum install -y \
+RUN yum install -y \
         binutils \
         build-essential \
         cmake \
